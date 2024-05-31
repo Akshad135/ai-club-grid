@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ask-us {
+  display: flex;
+  align-items: center;
+  background-color: #b2ff59;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+
+.ask-us button {
+  background-color: #b2ff59;
+  border: none;
+  color: #000;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.header-right span {
+  margin-left: 70px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64vh;
+  background: url("background-pattern.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.title h1 {
+  font-size: 10vw;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  padding: 20px 40px;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 25px;
+}
+
+.links a {
+  color: #b2ff59;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+header nav ul li a:hover {
+  color: #b2ff59;
+}
+
+.developed-by {
+  text-align: right;
+}
