@@ -29,10 +29,76 @@
       .item-5,
       .item-6 {
         background-color: #dff49e;
+        opacity: 0;
+        animation-fill-mode: forwards;
       }
 
       .item-3 {
         background-color: #ccff28;
+        opacity: 1;
+      }
+
+      .item-1 {
+        animation: slideInLeft 1s ease-out forwards;
+      }
+
+      .item-2 {
+        animation: slideInBottom 1s ease-out forwards 0.5s;
+      }
+
+      .item-4 {
+        animation: slideInTop 1s ease-out forwards 1s;
+      }
+
+      .item-5 {
+        animation: slideInRight 1s ease-out forwards 1.5s;
+      }
+
+      .item-6 {
+        animation: slideInRight 1s ease-out forwards 2s;
+      }
+      @keyframes slideInLeft {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInBottom {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInTop {
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInRight {
+        0% {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
       }
 
       @media (min-width: 1024px) {
